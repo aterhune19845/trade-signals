@@ -12,14 +12,14 @@ time-stamped history via git + GitHub's commit timestamps.
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 49.9% |
-| BIL | 40.0% |
-| TLT | 10.2% |
+| QQQM | 49.3% |
+| BIL | 40.1% |
+| TLT | 10.7% |
 
-- **Equity exposure:** 0.499
+- **Equity exposure:** 0.493
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-07-01T20:08:17Z
+- **Published (UTC):** 2026-07-01T20:20:10Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
