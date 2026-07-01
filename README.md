@@ -8,21 +8,18 @@ catastrophe stop). Each trading day the bot commits its recommended target
 portfolio weights *before or at* execution, creating a tamper-evident,
 time-stamped history via git + GitHub's commit timestamps.
 
-## Latest signal — data date `2026-06-16`
+## Latest signal — data date `2026-07-01`
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 52.6% |
-| GLDM | 20.1% |
-| TQQQ | 13.6% |
-| TLT | 9.3% |
-| DBC | 2.4% |
-| TIP | 1.9% |
+| QQQM | 49.9% |
+| BIL | 40.0% |
+| TLT | 10.2% |
 
-- **Equity exposure:** 0.934
-- **Gold exposure:** 0.201
+- **Equity exposure:** 0.499
+- **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-07-01T19:58:14Z
+- **Published (UTC):** 2026-07-01T20:08:17Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·

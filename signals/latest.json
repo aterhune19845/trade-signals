@@ -1,17 +1,14 @@
 {
-  "published_utc": "2026-07-01T19:58:14Z",
-  "data_date": "2026-06-16",
+  "published_utc": "2026-07-01T20:08:17Z",
+  "data_date": "2026-07-01",
   "weights": {
-    "GLDM": 0.2011,
-    "DBC": 0.0241,
-    "TIP": 0.0193,
-    "QQQM": 0.5263,
-    "TQQQ": 0.136,
-    "TLT": 0.0932
+    "QQQM": 0.4987,
+    "BIL": 0.3996,
+    "TLT": 0.1017
   },
   "cash": 0.0,
-  "eq_exposure": 0.934,
-  "gold_exposure": 0.201,
+  "eq_exposure": 0.499,
+  "gold_exposure": 0,
   "cat_halted": false,
   "engine": "validate_combined fortify=True cat_dd=-0.32",
   "disclaimer": "For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser."
