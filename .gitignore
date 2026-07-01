@@ -1,0 +1,7 @@
+# the publisher itself references local machine paths — keep it private
+publish.py
+# systemd units live here for convenience but are not part of the record
+*.service
+*.timer
+__pycache__/
+*.pyc
