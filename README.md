@@ -19,7 +19,7 @@ time-stamped history via git + GitHub's commit timestamps.
 - **Equity exposure:** 0.493
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-07-01T20:20:10Z
+- **Published (UTC):** 2026-07-02T00:50:58Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
