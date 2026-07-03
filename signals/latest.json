@@ -1,14 +1,14 @@
 {
-  "published_utc": "2026-07-02T20:20:41Z",
+  "published_utc": "2026-07-03T20:21:12Z",
   "status": "ok",
   "data_date": "2026-07-02",
   "weights": {
-    "QQQM": 0.4972,
-    "BIL": 0.4041,
-    "TLT": 0.0987
+    "QQQM": 0.4984,
+    "BIL": 0.405,
+    "TLT": 0.0966
   },
   "cash": 0.0,
-  "eq_exposure": 0.497,
+  "eq_exposure": 0.498,
   "gold_exposure": 0,
   "cat_halted": false,
   "engine": "validate_combined fortify=True cat_dd=-0.32",

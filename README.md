@@ -12,14 +12,14 @@ time-stamped history via git + GitHub's commit timestamps.
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 49.7% |
-| BIL | 40.4% |
-| TLT | 9.9% |
+| QQQM | 49.8% |
+| BIL | 40.5% |
+| TLT | 9.7% |
 
-- **Equity exposure:** 0.497
+- **Equity exposure:** 0.498
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-07-02T20:20:41Z
+- **Published (UTC):** 2026-07-03T20:21:12Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -31,7 +31,7 @@ Forward, normalized index (inception = 100.00 on 2026-06-11, 15 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **99.72** | -0.28% |
+| Strategy | **99.87** | -0.13% |
 | SPY | 101.21 | +1.21% |
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
