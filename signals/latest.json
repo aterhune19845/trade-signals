@@ -1,9 +1,19 @@
 {
-  "published_utc": "2026-07-16T20:20:30Z",
-  "status": "error",
-  "error": "data-source mismatch \u2014 signal withheld; the live trading system's price cache appears stale",
-  "detail": "BIL: published=0.1386 executed=0.1486 (delta 0.0100)",
-  "fresh_date": "2026-07-16",
-  "executed_date": "2026-07-16",
+  "published_utc": "2026-07-17T20:21:01Z",
+  "status": "ok",
+  "data_date": "2026-07-17",
+  "weights": {
+    "GLDM": 0.0181,
+    "DBC": 0.0151,
+    "TIP": 0.0121,
+    "QQQM": 0.5918,
+    "BIL": 0.1444,
+    "TLT": 0.2185
+  },
+  "cash": 0.0,
+  "eq_exposure": 0.592,
+  "gold_exposure": 0.018,
+  "cat_halted": false,
+  "engine": "validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime",
   "disclaimer": "For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser."
 }
