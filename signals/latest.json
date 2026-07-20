@@ -1,17 +1,18 @@
 {
-  "published_utc": "2026-07-17T20:21:01Z",
+  "published_utc": "2026-07-20T20:20:59Z",
   "status": "ok",
-  "data_date": "2026-07-17",
+  "data_date": "2026-07-20",
   "weights": {
-    "GLDM": 0.0181,
-    "DBC": 0.0151,
-    "TIP": 0.0121,
-    "QQQM": 0.5918,
-    "BIL": 0.1444,
-    "TLT": 0.2185
+    "GLDM": 0.0176,
+    "DBC": 0.0147,
+    "TIP": 0.0117,
+    "QQQM": 0.5753,
+    "BIL": 0.0264,
+    "TQQQ": 0.114,
+    "TLT": 0.2403
   },
   "cash": 0.0,
-  "eq_exposure": 0.592,
+  "eq_exposure": 0.917,
   "gold_exposure": 0.018,
   "cat_halted": false,
   "engine": "validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime",
