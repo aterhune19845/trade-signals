@@ -1,5 +1,15 @@
 # Daytrade Bot — Public Signal Track Record
 
+> 🚨 **SIGNAL INTEGRITY ALERT — publishing paused**
+>
+> data-source mismatch — signal withheld; the live trading system's price cache appears stale.
+>
+> **Detected (UTC):** 2026-07-23T20:21:25Z  
+> **Fresh data date:** `2026-07-23`  ·  **Trading-system (executed) date:** `2026-07-23`  
+> **Mismatch:** BIL: published=0.0572 executed=0.0734 (delta 0.0162); QQQM: published=0.6514 executed=0.6338 (delta 0.0176)
+>
+> To avoid recording a signal that differs from what the live account actually executed, **no new signal is published** until this is resolved. Machine-readable status: [`signals/latest.json`](signals/latest.json) (`"status": "error"`).
+
 > For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser.
 
 This repository is an **automatically published, append-only, forward track record**
@@ -8,9 +18,11 @@ catastrophe stop). Each trading day the bot commits its recommended target
 portfolio weights *before or at* execution, creating a tamper-evident,
 time-stamped history via git + GitHub's commit timestamps.
 
-## Latest signal — data date `2026-07-22`
+## ⚠️ Signal WITHHELD — last verified `2026-07-22` (possibly stale)
 
-| Ticker | Target weight |
+No new signal was published this run because the data sources disagreed (see the alert above). The table below is the **last verified** signal and may no longer reflect the live account.
+
+| Ticker | Target weight (last verified) |
 |---|---|
 | QQQM | 60.5% |
 | TLT | 23.6% |
@@ -19,23 +31,17 @@ time-stamped history via git + GitHub's commit timestamps.
 | DBC | 1.7% |
 | TIP | 1.4% |
 
-- **Equity exposure:** 0.605
-- **Gold exposure:** 0.02
-- **Catastrophe stop:** no
-- **Published (UTC):** 2026-07-22T20:20:55Z
-- **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime`
-
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
 full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Forward, normalized index (inception = 100.00 on 2026-06-11, 27 trading days):
+Forward, normalized index (inception = 100.00 on 2026-06-11, 28 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **99.34** | -0.66% |
-| SPY | 101.58 | +1.58% |
+| Strategy | **98.05** | -1.95% |
+| SPY | 100.31 | +0.31% |
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
