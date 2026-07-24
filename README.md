@@ -4,9 +4,9 @@
 >
 > data-source mismatch — signal withheld; the live trading system's price cache appears stale.
 >
-> **Detected (UTC):** 2026-07-23T20:21:25Z  
-> **Fresh data date:** `2026-07-23`  ·  **Trading-system (executed) date:** `2026-07-23`  
-> **Mismatch:** BIL: published=0.0572 executed=0.0734 (delta 0.0162); QQQM: published=0.6514 executed=0.6338 (delta 0.0176)
+> **Detected (UTC):** 2026-07-24T20:20:56Z  
+> **Fresh data date:** `2026-07-24`  ·  **Trading-system (executed) date:** `2026-07-24`  
+> **Mismatch:** BIL: published=0.0693 executed=1.0000 (delta 0.9307); DBC: published=0.0197 executed=0.0000 (delta 0.0197); GLDM: published=0.0236 executed=0.0000 (delta 0.0236); QQQM: published=0.6455 executed=0.0000 (delta 0.6455); TIP: published=0.0158 executed=0.0000 (delta 0.0158); TLT: published=0.2261 executed=0.0000 (delta 0.2261)
 >
 > To avoid recording a signal that differs from what the live account actually executed, **no new signal is published** until this is resolved. Machine-readable status: [`signals/latest.json`](signals/latest.json) (`"status": "error"`).
 
@@ -36,12 +36,12 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Forward, normalized index (inception = 100.00 on 2026-06-11, 28 trading days):
+Forward, normalized index (inception = 100.00 on 2026-06-11, 29 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **98.05** | -1.95% |
-| SPY | 100.31 | +0.31% |
+| Strategy | **97.36** | -2.64% |
+| SPY | 100.42 | +0.42% |
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
