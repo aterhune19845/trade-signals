@@ -8,7 +8,7 @@ catastrophe stop). Each trading day the bot commits its recommended target
 portfolio weights *before or at* execution, creating a tamper-evident,
 time-stamped history via git + GitHub's commit timestamps.
 
-## Latest signal — data date `2026-08-07`
+## Latest signal — data date `2026-08-10`
 
 | Ticker | Target weight |
 |---|---|
@@ -17,7 +17,7 @@ time-stamped history via git + GitHub's commit timestamps.
 - **Equity exposure:** 0
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-08-07T20:21:07Z
+- **Published (UTC):** 2026-08-10T20:20:56Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -25,12 +25,12 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Forward, normalized index (inception = 100.00 on 2026-06-11, 39 trading days):
+Forward, normalized index (inception = 100.00 on 2026-06-11, 40 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **101.26** | +1.26% |
-| SPY | 105.08 | +5.08% |
+| Strategy | **100.93** | +0.93% |
+| SPY | 105.05 | +5.05% |
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
