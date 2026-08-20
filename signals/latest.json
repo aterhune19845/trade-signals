@@ -1,9 +1,9 @@
 {
-  "published_utc": "2026-08-19T20:20:58Z",
+  "published_utc": "2026-08-20T20:20:59Z",
   "status": "error",
   "error": "data-source mismatch \u2014 signal withheld; the live trading system's price cache appears stale",
-  "detail": "BIL: published=0.2781 executed=1.0000 (delta 0.7219); DBC: published=0.0193 executed=0.0000 (delta 0.0193); GLDM: published=0.0231 executed=0.0000 (delta 0.0231); QQQM: published=0.6640 executed=0.0000 (delta 0.6640); TIP: published=0.0154 executed=0.0000 (delta 0.0154)",
-  "fresh_date": "2026-08-19",
-  "executed_date": "2026-08-19",
+  "detail": "BIL: published=0.2696 executed=1.0000 (delta 0.7304); DBC: published=0.0195 executed=0.0000 (delta 0.0195); GLDM: published=0.0234 executed=0.0000 (delta 0.0234); QQQM: published=0.6719 executed=0.0000 (delta 0.6719); TIP: published=0.0156 executed=0.0000 (delta 0.0156)",
+  "fresh_date": "2026-08-20",
+  "executed_date": "2026-08-20",
   "disclaimer": "For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser."
 }
