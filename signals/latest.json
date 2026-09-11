@@ -1,21 +1,21 @@
 {
-  "published_utc": "2026-09-10T22:30:47Z",
+  "published_utc": "2026-09-11T20:20:05Z",
   "status": "ok",
-  "data_date": "2026-09-10",
+  "data_date": "2026-09-11",
   "weights": {
-    "BIL": 0.0501,
-    "DBC": 0.0413,
-    "GLDM": 0.0496,
-    "QQQM": 0.3789,
-    "TIP": 0.033,
-    "TQQQ": 0.4471
+    "DBC": 0.0409,
+    "GLDM": 0.0491,
+    "QQQM": 0.4007,
+    "TIP": 0.0327,
+    "TLT": 0.0596,
+    "TQQQ": 0.4171
   },
   "cash": 0.0,
-  "eq_exposure": 1.72,
+  "eq_exposure": 1.65,
   "gold_exposure": 0.05,
   "cat_halted": false,
   "engine": "validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False",
-  "decision_id": "777014315df88fca",
+  "decision_id": "7fd529e0665a6994",
   "execution_status": "rebalanced",
   "source": "hash-verified canonical decision + broker-resolved live target",
   "disclaimer": "For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser."
