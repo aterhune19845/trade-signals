@@ -8,20 +8,20 @@ catastrophe stop). Each trading day the bot commits its recommended target
 portfolio weights *before or at* execution, creating a tamper-evident,
 time-stamped history via git + GitHub's commit timestamps.
 
-## Latest signal — data date `2026-10-12`
+## Latest signal — data date `2026-10-13`
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 61.7% |
-| TQQQ | 15.0% |
-| BIL | 12.0% |
-| GLDM | 8.3% |
-| TIP | 3.0% |
+| QQQM | 61.6% |
+| TQQQ | 16.4% |
+| BIL | 10.3% |
+| GLDM | 8.6% |
+| TIP | 3.1% |
 
-- **Equity exposure:** 1.07
-- **Gold exposure:** 0.08
+- **Equity exposure:** 1.11
+- **Gold exposure:** 0.09
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-10-12T20:20:11Z
+- **Published (UTC):** 2026-10-13T20:20:01Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -29,12 +29,12 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Forward, normalized index (inception = 100.00 on 2026-06-11, 84 trading days):
+Forward, normalized index (inception = 100.00 on 2026-06-11, 85 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **106.19** | +6.19% |
-| SPY | 106.0 | +6.00% |
+| Strategy | **105.79** | +5.79% |
+| SPY | 105.99 | +5.99% |
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
