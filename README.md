@@ -2,11 +2,12 @@
 
 > For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser.
 
-This repository is an **automatically published, append-only, forward track record**
-of a systematic trading strategy (an equity/gold/duration trend system with a
-catastrophe stop). Each trading day the bot commits its recommended target
-portfolio weights *before or at* execution, creating a tamper-evident,
-time-stamped history via git + GitHub's commit timestamps.
+This repository publishes the systematic strategy's target weights and a
+cash-flow-adjusted live-account return series. Signals are published after the
+bot's daily execution, so they document the bot's decisions and are not a
+pre-trade signal service or a subscriber-fill performance record. Git records
+publication times and revisions; historical signal records may be corrected
+with an accompanying audit note.
 
 ## Latest signal — data date `2026-10-19`
 
@@ -29,12 +30,14 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Forward, normalized index (inception = 100.00 on 2026-06-11, 89 trading days):
+Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 84 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **150.84** | +50.84% |
-| SPY | 104.42 | +4.42% |
+| Strategy | **99.17** | -0.83% |
+| SPY | 102.9 | +2.90% |
+
+Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
@@ -47,8 +50,9 @@ _Index only — no account balances are published. Full daily series: [`performa
 
 ## How to read the signals
 
-`signals/history.jsonl` is one JSON object per line, appended once per trading
-day. Fields: `published_utc`, `status` (`ok` or `error`), `data_date`, `weights`
+`signals/history.jsonl` is one JSON object per line. A same-day rerun can refresh
+the latest row, and audited historical corrections are identified in the record.
+Fields: `published_utc`, `status` (`ok` or `error`), `data_date`, `weights`
 (tradeable ETF tickers → target fraction), `cash`, `eq_exposure`,
 `gold_exposure`, `cat_halted`, `engine`. A `status: error` row means the
 publisher detected a data-source mismatch and **withheld** that day's signal
