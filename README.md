@@ -9,20 +9,20 @@ pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-10-19`
+## Latest signal — data date `2026-10-20`
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 61.1% |
-| TQQQ | 18.6% |
-| BIL | 10.8% |
-| GLDM | 6.9% |
-| TIP | 2.5% |
+| QQQM | 47.3% |
+| TQQQ | 29.1% |
+| BIL | 12.2% |
+| GLDM | 8.4% |
+| TIP | 3.0% |
 
-- **Equity exposure:** 1.17
-- **Gold exposure:** 0.07
+- **Equity exposure:** 1.35
+- **Gold exposure:** 0.08
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-10-19T20:20:02Z
+- **Published (UTC):** 2026-10-20T20:20:03Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -30,12 +30,12 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 84 trading days):
+Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 85 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **99.17** | -0.83% |
-| SPY | 102.9 | +2.90% |
+| Strategy | **99.0** | -1.00% |
+| SPY | 103.28 | +3.28% |
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
