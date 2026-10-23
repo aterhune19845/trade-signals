@@ -39,6 +39,8 @@ Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 87 tra
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
+Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-10-22; this is not an official closing valuation.
+
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
 ## What is published (and what is not)
