@@ -9,21 +9,22 @@ pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-11-03`
+## Latest signal — data date `2026-11-04`
 
 | Ticker | Target weight |
 |---|---|
-| QQQM | 60.9% |
-| TLT | 21.1% |
-| TQQQ | 11.8% |
+| QQQM | 40.8% |
+| TLT | 20.6% |
+| BIL | 20.4% |
+| TQQQ | 11.9% |
 | GLDM | 2.5% |
 | PDBC | 2.1% |
 | TIP | 1.7% |
 
-- **Equity exposure:** 0.96
-- **Gold exposure:** 0.02
+- **Equity exposure:** 0.77
+- **Gold exposure:** 0.03
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-11-03T21:20:02Z
+- **Published (UTC):** 2026-11-04T21:20:11Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -31,16 +32,16 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 95 trading days):
+Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 96 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **93.77** | -6.23% |
-| SPY | 101.27 | +1.27% |
+| Strategy | **94.61** | -5.39% |
+| SPY | 102.94 | +2.94% |
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
-Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-03T20:55:53.880891+00:00; this is not an official closing valuation.
+Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-04T20:55:50.034114+00:00; this is not an official closing valuation.
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
