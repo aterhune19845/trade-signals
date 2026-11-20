@@ -9,17 +9,17 @@ pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-11-19`
+## Latest signal — data date `2026-11-20`
 
 | Ticker | Target weight |
 |---|---|
-| BIL | 79.7% |
-| TLT | 20.3% |
+| BIL | 80.7% |
+| TLT | 19.3% |
 
 - **Equity exposure:** 0.0
 - **Gold exposure:** 0.0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-11-19T21:20:01Z
+- **Published (UTC):** 2026-11-20T21:20:04Z
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -27,16 +27,16 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 107 trading days):
+Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 108 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **90.6** | -9.40% |
-| SPY | 96.1 | -3.90% |
+| Strategy | **90.85** | -9.15% |
+| SPY | 92.75 | -7.25% |
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
-Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-19T20:59:09.314338+00:00; this is not an official closing valuation.
+Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-20T20:59:08.452353+00:00; this is not an official closing valuation.
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
