@@ -1,0 +1,21 @@
+{
+  "basis": "hypothetical-strategy-shadow-not-realized-account-return",
+  "drawdown_pct": 0.0,
+  "head_sha256": "8a1a19971670d82a2854afb368bf76c4cfab8347cd6e0eecb66c26f1c2fb3737",
+  "index": 100.3422665315556,
+  "last_date": "2026-11-20",
+  "limitations": [
+    "Hypothetical canonical-target book; not proof of broker acceptance, fills, or realized performance.",
+    "Assumes fractional execution; no broker minimums, fixed/regulatory fees, settlement, or market capacity.",
+    "Cash earns zero; ETF expenses/leverage financing are embedded in observed/proxy price returns.",
+    "Canonical model safety rules retained; customer-account catastrophe overrides are not applied.",
+    "Proxy returns and cross-vintage adjustment alignment are modeling assumptions, not actual ETF fills or broker cash dividends.",
+    "No strategy returns inferred for missing sessions; missing evidence is a hard failure.",
+    "Does not replace or splice into the real-account performance history."
+  ],
+  "policy_sha256": "4d3a043d5d3e5784ac6123172ae2bc3946e9bab9a9a45a5487c23fe78aeb238d",
+  "return_pct": 0.3422665315555946,
+  "sessions": 3,
+  "start_date": "2026-11-18",
+  "status": "ok"
+}

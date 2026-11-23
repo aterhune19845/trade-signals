@@ -1,0 +1,12 @@
+{
+  "activated_utc": "2026-11-23T14:43:15.856194+00:00",
+  "git_head_before_activation": "95c907e0471b8f2eca3f2b3d4f0f07fb56c144d0",
+  "original_files_sha256": {
+    "README.md": "3631c1475371dbf8575c507d5e1e963b921eea1582ae41afd278ab29afefbf71",
+    "performance/nav.csv": "7bec517a2c6b57a36799383f6fbe95d20756334d96225832989377069ec9008c",
+    "signals/history.jsonl": "71dd26de716cf7f70adf4395270972703bb2445405cecba40e331ee646034309",
+    "signals/latest.json": "5bd8e846b1c28d44e64bc38f168c627d3e2a51882019f0c112fd32b937e354f3"
+  },
+  "schema": "strategy-evidence-activation/v1",
+  "statement": "Original signal history and actual-account NAV were preserved; the shadow and corrections are separate additions."
+}

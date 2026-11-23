@@ -1,0 +1,29 @@
+{
+  "activated_utc": "2026-11-23T14:43:15.856194+00:00",
+  "anchor_session": "2026-11-18",
+  "cash_reserve_fraction": 0.0005,
+  "decision_selection": "first scheduled daily cycle with same-session replay inputs; ignore deposit cycles/retries",
+  "external_flows": "none; normalized strategy unit, independent of deposits/transfers",
+  "implementation_sha256": "70686214501e33d9c68bed12e8bfc27082e2f4685308f7c8e9d5233cbc1bbd47",
+  "initial_index": 100.0,
+  "limitations": [
+    "Hypothetical canonical-target book; not proof of broker acceptance, fills, or realized performance.",
+    "Assumes fractional execution; no broker minimums, fixed/regulatory fees, settlement, or market capacity.",
+    "Cash earns zero; ETF expenses/leverage financing are embedded in observed/proxy price returns.",
+    "Canonical model safety rules retained; customer-account catastrophe overrides are not applied.",
+    "Proxy returns and cross-vintage adjustment alignment are modeling assumptions, not actual ETF fills or broker cash dividends.",
+    "No strategy returns inferred for missing sessions; missing evidence is a hard failure.",
+    "Does not replace or splice into the real-account performance history."
+  ],
+  "price_basis": "frozen near-close engine observations; vintages aligned at last shared completed session before prior decision",
+  "price_proxies": {
+    "GLDM": "GLD",
+    "QQQM": "QQQ"
+  },
+  "rebalance_band_l1": 0.05,
+  "reconstructed_through": "2026-11-20",
+  "schema": "canonical-strategy-shadow-policy/v1",
+  "seed": "actual pre-block portfolio fractions; account dollar balance is not used",
+  "slippage_bps_per_dollar_traded": 3.0,
+  "target": "archived broker-neutral canonical target, before account/broker overrides"
+}

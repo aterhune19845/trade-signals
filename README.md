@@ -1,5 +1,43 @@
 # Daytrade Bot — Public Signal Track Record
 
+<!-- strategy-evidence-v1:start -->
+
+## Strategy evidence versus actual account results
+
+**These are separate records, not a blended track record.** The `Strategy` column/row in the
+legacy account export means the **actual broker account**, including broker-access failures.
+It is not the broker-neutral strategy shadow. Original commits, signal rows, and account
+returns have not been relabeled as hypothetical fills or overwritten by shadow results.
+
+### Hypothetical canonical-strategy shadow — not live trading
+
+Normalized shadow index: **100.342267**; return **+0.342267%** from 2026-11-18 through 2026-11-20. Current shadow drawdown: 0.000000%.
+
+This separate index is anchored at 100 on November 18, 2026 using the pre-block portfolio
+fractions. It follows the **first saved scheduled decision** each session, not later retry
+decisions, under a frozen 5% drift band, 0.05% proportional cash reserve and 3-basis-point
+modeled cost per dollar traded. It has no deposits or transfers. It uses archived adjusted
+engine observations, with QQQ/GLD proxies for QQQM/GLDM and cross-vintage dividend/split
+alignment. Fractional trading is assumed; broker minimums, regulatory fees, settlement,
+and account-specific risk overrides are **not** simulated. Canonical model safety remains.
+
+Rows labeled `retrospective-from-contemporaneously-archived-inputs` were calculated later
+from inputs saved at the original decision time. They were **not** published or traded then.
+`prospective` rows are subsequently calculated forward under the same policy. A passing
+hash/replay check verifies consistency, **not** investment merit, actual fills, an independent
+audit, or suitability of hypothetical performance for marketing.
+
+- [Shadow returns](performance/strategy_shadow.csv) · [Hash-linked evidence](performance/strategy_shadow.jsonl)
+- [Frozen policy and limitations](performance/strategy_shadow_policy.json) · [Current validation status](performance/strategy_shadow_latest.json)
+- [Published calculation source](performance/methodology/strategy_forward_evidence_v1.py)
+- [Activation provenance](performance/evidence_activation.json): original Git commit and file hashes before this separate track was added.
+- [Append-only execution-label corrections](signals/execution_corrections.jsonl): blocked/rejected is not intentional holding.
+
+Missing sessions or changed old inputs cause a visible failure. Previously published shadow
+rows cannot be silently recalculated; a changed policy requires a separate version.
+
+<!-- strategy-evidence-v1:end -->
+
 > For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser.
 
 This repository publishes the systematic strategy's target weights and a
