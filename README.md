@@ -11,7 +11,7 @@ returns have not been relabeled as hypothetical fills or overwritten by shadow r
 
 ### Hypothetical canonical-strategy shadow — not live trading
 
-Normalized shadow index: **100.342267**; return **+0.342267%** from 2026-11-18 through 2026-11-20. Current shadow drawdown: 0.000000%.
+Normalized shadow index: **100.407658**; return **+0.407658%** from 2026-11-18 through 2026-11-23. Current shadow drawdown: 0.000000%.
 
 This separate index is anchored at 100 on November 18, 2026 using the pre-block portfolio
 fractions. It follows the **first saved scheduled decision** each session, not later retry
@@ -57,24 +57,27 @@ separately disclosed source adapter adds the independent captures. New signal re
 
 > For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser.
 
-This repository publishes the systematic strategy's target weights and a
-cash-flow-adjusted live-account return series. Signals are published after the
-bot's daily execution, so they document the bot's decisions and are not a
+This repository publishes the systematic strategy's target weights, a separate
+hypothetical strategy shadow, and a cash-flow-adjusted actual-account return series.
+Signals are recorded by a near-close decision process even when broker execution
+is stopped. They are published after the close, not as a
 pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-11-20`
+## Latest signal — data date `2026-11-23`
 
 | Ticker | Target weight |
 |---|---|
-| BIL | 80.7% |
-| TLT | 19.3% |
+| BIL | 81.7% |
+| TLT | 18.3% |
 
-- **Equity exposure:** 0.0
-- **Gold exposure:** 0.0
+- **Equity exposure:** 0
+- **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-11-20T21:20:04Z
+- **Published (UTC):** 2026-11-23T21:20:12Z
+- **Execution status:** `not_executed_signal_only`
+- **Decision source:** `execution-independent-signal-capture`
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
 
 Machine-readable: [`signals/latest.json`](signals/latest.json) ·
@@ -82,16 +85,16 @@ full history: [`signals/history.jsonl`](signals/history.jsonl)
 
 ## Performance
 
-Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 108 trading days):
+Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 109 trading days):
 
 | Series | Index | Since inception |
 |---|---|---|
-| Strategy | **90.85** | -9.15% |
-| SPY | 92.75 | -7.25% |
+| Actual account | **90.8** | -9.20% |
+| SPY | 97.0 | -3.00% |
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 
-Reconciliation: **provisional**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-20T20:59:08.452353+00:00; this is not an official closing valuation.
+Reconciliation: **reconciled**. Detected cash credits require broker verification; unavailable commissions remain unknown, not zero. Account NAV already reflects broker-charged costs; fees are not deducted a second time. Latest observation: 2026-11-23T14:37:30.397413+00:00; this is not an official closing valuation.
 
 _Index only — no account balances are published. Full daily series: [`performance/nav.csv`](performance/nav.csv)._
 
