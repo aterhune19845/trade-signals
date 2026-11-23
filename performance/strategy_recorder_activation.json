@@ -1,0 +1,14 @@
+{
+  "activated_utc": "2026-11-23T16:47:26.274327+00:00",
+  "audit_schedule": "16:12 America/New_York",
+  "capture_schedule": "exchange close minus five minutes; normal and early-close sessions",
+  "first_eligible_session": "2026-11-23",
+  "publication_schedule": "16:20 America/New_York",
+  "schema": "independent-recorder-activation/v1",
+  "source_adapter": "Add independent, zero-order decision captures to the existing frozen calculator; preserve pinned old source hashes.",
+  "source_sha256": {
+    "ops/schwab_signal_quotes.py": "4b750833f71da36e8ce480b79a476548e27f1029581d63ef14af0629d2834649",
+    "strategy_evidence_sources.py": "4ec7dd24ba35f27f20f40b3110a135b3c6559483a28662a85b091903c14307cb",
+    "strategy_signal_capture.py": "081312fa6dff590feff41d60d08dac3bf7f8312b2108ff5bf9d760bb9702fbf8"
+  }
+}

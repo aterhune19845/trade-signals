@@ -36,6 +36,23 @@ audit, or suitability of hypothetical performance for marketing.
 Missing sessions or changed old inputs cause a visible failure. Previously published shadow
 rows cannot be silently recalculated; a changed policy requires a separate version.
 
+### Capture continues without the trading bot
+
+An independent, data-only recorder captures the same canonical engine five minutes before
+the exchange close, including early closes. It cannot place, replace, or cancel orders.
+IBKR quote reads have a guarded Schwab quote fallback; data still require valid access and
+freshness. Missing data produces an explicit failure, not an invented signal. A separate
+archived-engine replay audit runs before the 16:20 ET GitHub publication. Actual-account
+valuations remain dated observations; no simulated value is substituted for a missing NAV.
+
+The already-published v1 shadow calculator and its existing rows remain unchanged. A
+separately disclosed source adapter adds the independent captures. New signal records use
+`not_executed_signal_only` when no broker execution took place.
+
+[Capture-source provenance](performance/strategy_capture_sources.jsonl) ·
+[Independent replay status](performance/strategy_capture_audit_latest.json) ·
+[Recorder/source adapter activation](performance/strategy_recorder_activation.json)
+
 <!-- strategy-evidence-v1:end -->
 
 > For informational and educational purposes only. NOT investment advice, not a solicitation, and not a recommendation to buy or sell any security. Past and simulated performance does not guarantee future results. The author is not a registered investment adviser.
