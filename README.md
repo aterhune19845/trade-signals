@@ -11,7 +11,7 @@ returns have not been relabeled as hypothetical fills or overwritten by shadow r
 
 ### Hypothetical canonical-strategy shadow — not live trading
 
-Normalized shadow index: **100.407658**; return **+0.407658%** from 2026-11-18 through 2026-11-23. Current shadow drawdown: 0.000000%.
+Normalized shadow index: **100.405675**; return **+0.405675%** from 2026-11-18 through 2026-11-24. Current shadow drawdown: -0.001975%.
 
 This separate index is anchored at 100 on November 18, 2026 using the pre-block portfolio
 fractions. It follows the **first saved scheduled decision** each session, not later retry
@@ -65,17 +65,17 @@ pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-11-23`
+## Latest signal — data date `2026-11-24`
 
 | Ticker | Target weight |
 |---|---|
-| BIL | 81.7% |
-| TLT | 18.3% |
+| BIL | 82.8% |
+| TLT | 17.2% |
 
 - **Equity exposure:** 0
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-11-23T21:20:12Z
+- **Published (UTC):** 2026-11-24T21:20:12Z
 - **Execution status:** `not_executed_signal_only`
 - **Decision source:** `execution-independent-signal-capture`
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`
@@ -90,7 +90,7 @@ Live account, cash-flow-adjusted index (inception = 100.00 on 2026-06-18, 109 tr
 | Series | Index | Since inception |
 |---|---|---|
 | Actual account | **90.8** | -9.20% |
-| SPY | 97.0 | -3.00% |
+| SPY | 96.97 | -3.03% |
 
 Returns use date-weighted Modified Dietz adjustments for recorded live deposits and withdrawals. Only explicitly tagged live observations are included; earlier untagged or paper rows are excluded. SPY uses adjusted closes over the same dates. This is the broker account's return, not a simulated return for a public follower's execution.
 

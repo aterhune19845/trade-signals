@@ -1,6 +1,6 @@
 {
   "scope": "archived engine replay, not live fills or settlement",
-  "session_date": "2026-11-23",
-  "source_event_sha256": "ae9d14d2b788c69ce81e92bb84758d6246f31f0c0c48c56e391e86747fb44b8a",
+  "session_date": "2026-11-24",
+  "source_event_sha256": "538879246361262a6e1ea35b27c348d638a5921a4d9909cf8459bdf76fef3357",
   "status": "passed"
 }

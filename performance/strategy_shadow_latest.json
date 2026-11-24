@@ -1,9 +1,9 @@
 {
   "basis": "hypothetical-strategy-shadow-not-realized-account-return",
-  "drawdown_pct": 0.0,
-  "head_sha256": "f99296e462d6c786a78065b188b6b662fcdb59523d889da5a24ad7c9cce77226",
-  "index": 100.40765792499577,
-  "last_date": "2026-11-23",
+  "drawdown_pct": -0.0019749697631410434,
+  "head_sha256": "d395ba2b63b4921df880e2596d69dbcbfeaf07d5841f16eac2021d484cfb601c",
+  "index": 100.40567490411188,
+  "last_date": "2026-11-24",
   "limitations": [
     "Hypothetical canonical-target book; not proof of broker acceptance, fills, or realized performance.",
     "Assumes fractional execution; no broker minimums, fixed/regulatory fees, settlement, or market capacity.",
@@ -14,8 +14,8 @@
     "Does not replace or splice into the real-account performance history."
   ],
   "policy_sha256": "4d3a043d5d3e5784ac6123172ae2bc3946e9bab9a9a45a5487c23fe78aeb238d",
-  "return_pct": 0.4076579249957746,
-  "sessions": 4,
+  "return_pct": 0.40567490411187634,
+  "sessions": 5,
   "start_date": "2026-11-18",
   "status": "ok"
 }
