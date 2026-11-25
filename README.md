@@ -11,7 +11,7 @@ returns have not been relabeled as hypothetical fills or overwritten by shadow r
 
 ### Hypothetical canonical-strategy shadow — not live trading
 
-Normalized shadow index: **100.405675**; return **+0.405675%** from 2026-11-18 through 2026-11-24. Current shadow drawdown: -0.001975%.
+Normalized shadow index: **100.556951**; return **+0.556951%** from 2026-11-18 through 2026-11-25. Current shadow drawdown: 0.000000%.
 
 This separate index is anchored at 100 on November 18, 2026 using the pre-block portfolio
 fractions. It follows the **first saved scheduled decision** each session, not later retry
@@ -65,17 +65,17 @@ pre-trade signal service or a subscriber-fill performance record. Git records
 publication times and revisions; historical signal records may be corrected
 with an accompanying audit note.
 
-## Latest signal — data date `2026-11-24`
+## Latest signal — data date `2026-11-25`
 
 | Ticker | Target weight |
 |---|---|
-| BIL | 82.8% |
-| TLT | 17.2% |
+| BIL | 83.8% |
+| TLT | 16.2% |
 
 - **Equity exposure:** 0
 - **Gold exposure:** 0
 - **Catastrophe stop:** no
-- **Published (UTC):** 2026-11-24T21:20:12Z
+- **Published (UTC):** 2026-11-25T21:20:12Z
 - **Execution status:** `not_executed_signal_only`
 - **Decision source:** `execution-independent-signal-capture`
 - **Engine:** `validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False`

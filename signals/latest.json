@@ -1,21 +1,21 @@
 {
-  "published_utc": "2026-11-24T21:20:12Z",
+  "published_utc": "2026-11-25T21:20:12Z",
   "status": "ok",
-  "data_date": "2026-11-24",
+  "data_date": "2026-11-25",
   "weights": {
-    "BIL": 0.8275,
-    "TLT": 0.1725
+    "BIL": 0.8379,
+    "TLT": 0.1621
   },
   "cash": 0.0,
   "eq_exposure": 0,
   "gold_exposure": 0,
   "cat_halted": false,
   "engine": "validate_combined fortify=True cat_dd=-0.32 rebal_drift=0.05 pvol=0.19 risk_on_confirm=5 dip_confirm=9 halt_confirm=5 excess_mom_regime m3_intl_regime cash_tips_regime gold2x_available=False",
-  "decision_id": "ff10c9682d7e5808",
+  "decision_id": "1fbfd38c35637178",
   "execution_status": "not_executed_signal_only",
   "canonical_strategy_weights": {
-    "BIL": 0.8275,
-    "TLT": 0.1725
+    "BIL": 0.8379,
+    "TLT": 0.1621
   },
   "performance_basis": "actual-account-performance-and-hypothetical-strategy-shadow-are-separate",
   "source": "hash-verified strategy-only decision; no broker execution attempted",
