@@ -1,6 +1,6 @@
 {
   "basis": "actual-account-observations; not strategy-only returns",
-  "checked_utc": "2026-11-25T21:22:11.674531+00:00",
+  "checked_utc": "2026-11-27T21:22:00.916604+00:00",
   "production_enabled": false,
   "schema": "broker-accounts-publication/v1",
   "status": "verified"
