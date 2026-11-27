@@ -11,7 +11,7 @@ returns have not been relabeled as hypothetical fills or overwritten by shadow r
 
 ### Hypothetical canonical-strategy shadow — not live trading
 
-Normalized shadow index: **100.556951**; return **+0.556951%** from 2026-11-18 through 2026-11-25. Current shadow drawdown: 0.000000%.
+**Strategy evidence unavailable/stale: publication failed validation. No flat or invented return was substituted.**
 
 This separate index is anchored at 100 on November 18, 2026 using the pre-block portfolio
 fractions. It follows the **first saved scheduled decision** each session, not later retry

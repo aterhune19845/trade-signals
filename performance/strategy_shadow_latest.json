@@ -1,21 +1,6 @@
 {
-  "basis": "hypothetical-strategy-shadow-not-realized-account-return",
-  "drawdown_pct": 0.0,
-  "head_sha256": "1ea811c27c4ecde1afce6e5f03a65eabcd97391ef440c2b6fb82b490138a01e2",
-  "index": 100.55695138068879,
-  "last_date": "2026-11-25",
-  "limitations": [
-    "Hypothetical canonical-target book; not proof of broker acceptance, fills, or realized performance.",
-    "Assumes fractional execution; no broker minimums, fixed/regulatory fees, settlement, or market capacity.",
-    "Cash earns zero; ETF expenses/leverage financing are embedded in observed/proxy price returns.",
-    "Canonical model safety rules retained; customer-account catastrophe overrides are not applied.",
-    "Proxy returns and cross-vintage adjustment alignment are modeling assumptions, not actual ETF fills or broker cash dividends.",
-    "No strategy returns inferred for missing sessions; missing evidence is a hard failure.",
-    "Does not replace or splice into the real-account performance history."
-  ],
-  "policy_sha256": "4d3a043d5d3e5784ac6123172ae2bc3946e9bab9a9a45a5487c23fe78aeb238d",
-  "return_pct": 0.5569513806887869,
-  "sessions": 6,
-  "start_date": "2026-11-18",
-  "status": "ok"
+  "checked_utc": "2026-11-27T21:20:55.624907+00:00",
+  "error_type": "ValueError",
+  "message": "Strategy shadow failed source, completeness, or immutable-history validation. No new shadow returns published.",
+  "status": "error"
 }
